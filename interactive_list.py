@@ -31,7 +31,7 @@ while True:
         lista.append(item) 
         print(f"{item} adicionado com sucesso.")
 
-    #Checa se o usuário adicionou mais que item na lista para tratar de forma diferente
+    #Checa se o usuário adicionou mais que um item na lista para tratar de forma diferente
     mais_que_um_item = False    
 
     #Caso o usuário selecione '[a]pagar'
