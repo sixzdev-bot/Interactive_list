@@ -57,17 +57,17 @@ while True:
         for indice, nome in enumerate(lista):
             print(indice+1, nome)
 
-        #Checagem se é um inteiro
+        #Pergunta qual o indíce do item que o usuário quer apagar, e checa se o input digitado é um inteiro
         try:
             selecao_apagar = int(input("\nQual indíce você quer apagar: "))  
         except ValueError:
             print("\n Oque você digitou não é um número")
             continue
 
-        #Caso o número digitado seja maior que o número de itens na lista    
+        #Caso o input digitado seja maior que o número de itens na lista    
         if selecao_apagar > len(lista):
             print("Indice maior que o disponivel")
-        #Caso o número digitado seja menor que o número de itens na lista        
+        #Caso o input digitado seja menor que o número de itens na lista        
         elif selecao_apagar < 1:
             print("Indíce menor que o disponivel")
         else:
